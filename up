@@ -24,14 +24,15 @@ if [ -x "$(command -v feh)" ]; then
 fi
 
 # User scripts
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+protonmail-bridge --no-window &
 dunst &
 nm-applet &
 xfce4-power-manager &
 numlockx on &
 volumeicon &
-protonmail-bridge --no-window &
+ipfs daemon --enable-gc &
 nextcloud --background &
-ipfs daemon &
 
 index=0
 monitors=($(polybar -m | sed s/:.*//))
