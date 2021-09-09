@@ -85,10 +85,14 @@ configuration {
 #element-icon {
     size:                           0.9em;
     border:                         0px;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #element-text {
-    highlight:                      None #8be9fd; 
+    highlight:                      None #8be9fd;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #element.selected {

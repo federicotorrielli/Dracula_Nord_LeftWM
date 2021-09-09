@@ -60,10 +60,14 @@ configuration {
     children: [element-icon, element-text];
 }
 #element-text { 
-    highlight:     None #8be9fd; 
+    highlight:     None #8be9fd;
+    background-color: inherit;
+    text-color:       inherit;
 }
 #element-icon {
     size: 0.9em;
+    background-color: inherit;
+    text-color:       inherit;
 }
 #element.normal.normal {
     background-color: @background;
