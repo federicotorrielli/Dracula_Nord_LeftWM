@@ -25,14 +25,15 @@ fi
 
 # User scripts
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-protonmail-bridge --no-window &
+xrdb merge /home/evilscript/.Xresources
 dunst &
 nm-applet &
 xfce4-power-manager &
 numlockx on &
 volumeicon &
-ipfs daemon --enable-gc &
 nextcloud --background &
+ipfs daemon --enable-gc &
+protonmail-bridge --no-window &
 
 index=0
 monitors=($(polybar -m | sed s/:.*//))
