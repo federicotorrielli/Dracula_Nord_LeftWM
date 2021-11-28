@@ -20,6 +20,7 @@ if [ -x "$(command -v feh)" ]; then
 fi
 
 # User scripts
+xinput --set-prop 13 "libinput Accel Speed" -0.5
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xrdb merge /home/evilscript/.Xresources
 dunst &
@@ -30,6 +31,7 @@ volumeicon &
 nextcloud --background &
 ipfs daemon --enable-gc &
 protonmail-bridge --no-window &
+/home/evilscript/Projects/paspio-git/paspio-updater.sh
 
 index=0
 monitors=($(polybar -m | sed s/:.*//))
