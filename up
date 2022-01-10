@@ -19,7 +19,7 @@ if [ -x "$(command -v feh)" ]; then
   feh --bg-fill /home/evilscript/Pictures/palette.png
 fi
 
-# User scripts
+#### User scripts ####
 xinput --set-prop 13 "libinput Accel Speed" -0.5
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xrdb merge /home/evilscript/.Xresources
@@ -29,9 +29,9 @@ xfce4-power-manager &
 numlockx on &
 volumeicon &
 nextcloud --background &
-ipfs daemon --enable-gc &
 protonmail-bridge --no-window &
-/home/evilscript/Projects/paspio-git/paspio-updater.sh
+# ipfs daemon --enable-gc &
+#### End user scripts ####
 
 index=0
 monitors=($(polybar -m | sed s/:.*//))

@@ -17,3 +17,4 @@ pkill protonmail-bridge
 pkill birdtray
 pkill ipfs
 pkill nextcloud
+pkill volumeicon
