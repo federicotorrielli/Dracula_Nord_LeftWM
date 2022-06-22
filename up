@@ -16,7 +16,7 @@ leftwm-command "LoadTheme $SCRIPTPATH/theme.toml"
 
 # Set background
 if [ -x "$(command -v feh)" ]; then
-  feh --bg-fill /home/evilscript/Pictures/palette.png
+  feh --bg-fill /home/evilscript/Pictures/newbg.png
 fi
 
 #### User scripts ####
